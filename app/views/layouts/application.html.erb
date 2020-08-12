@@ -7,11 +7,17 @@
       <!-- Add these line for detecting device width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <nav class="box navbar navbar-expand-lg navbar-light bg-light">
+      <a class="item1 navbar-brand" href="http://localhost:3000/restaurants">Yelp MVP</a>
+      <a class="item2 navbar-brand" href="http://localhost:3000/restaurants/new">New Restaurant</a>
+    </nav>
+
     <%= yield %>
   </body>
 </html>
